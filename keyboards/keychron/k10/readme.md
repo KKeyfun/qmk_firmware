@@ -1,8 +1,11 @@
 # Keychron K10
 
 K10 Gateron Non-Hotswap RGB
+K10 Gateron Hotswap White (WIP not tested - don't use)
 
-Adapted from the Keychron K8 [config](https://github.com/SonixQMK/qmk_firmware/tree/sn32_develop/keyboards/keychron/k8) 
+Adapted from the Keychron K8 [config](https://github.com/SonixQMK/qmk_firmware/tree/sn32_develop/keyboards/keychron/k8)
+
+K10 White based off of tori's K10 RGB fork: https://github.com/churipputori/qmk_firmware/tree/keychron_k10 
 
 Make example for this keyboard (after setting up your build environment):
 
