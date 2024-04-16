@@ -182,6 +182,16 @@ const led_matrix_driver_t led_matrix_driver = {
     .set_value_all = IS31FL3731_set_value_all,
 };
 
+#   elif defined(SN32F26x)
+static void flush(void) {}  // Due to the way we do PWM, every cycle is a flush
+
+const led_matrix_driver_t led_matrix_driver = {
+    .init          = SN32F26x_init,
+    .flush         = flush,
+    .set_value     = SN32F26x_set_value,
+    .set_value_all = SN32F26x_set_value_all,
+};
+
 #    elif defined(IS31FL3733)
 static void flush(void) {
     IS31FL3733_update_pwm_buffers(LED_DRIVER_ADDR_1, 0);

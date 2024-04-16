@@ -8,7 +8,7 @@
     "debounce": 5,
     "diode_direction": "COL2ROW",
     "features": {
-        "led_matrix": true,
+        "led_matrix": false,
         "bootmagic": true,
         "command": false,
         "console": false,
@@ -18,7 +18,7 @@
         "dip_switch": true
     },
     "led_matrix": {
-        "driver": "CKLED2001",
+        "driver": "SN32F26x",
         "animations": {
             "none": true,
             "solid": true,
